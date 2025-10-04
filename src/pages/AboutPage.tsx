@@ -12,8 +12,8 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-              I'm a third-year Computer Science student at University Name, passionate about
-              software development and problem-solving. My journey in tech started with a
+              I'm a third-year Electronics and Communication Engineering (ECE) student at University Name, passionate about
+              technology and problem-solving. My journey in tech started with a
               curiosity about how things work, and has evolved into a deep commitment to
               creating meaningful digital experiences.
             </p>
@@ -37,7 +37,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-xl mb-2 text-slate-900">Education</h3>
-                  <p className="text-slate-600">B.S. Computer Science</p>
+                  <p className="text-slate-600">B.E. Electronics and Communication Engineering (ECE)</p>
                   <p className="text-slate-500 text-sm">Expected Graduation: May 2026</p>
                   <p className="text-slate-500 text-sm">GPA: 3.8/4.0</p>
                 </div>
