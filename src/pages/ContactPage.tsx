@@ -57,7 +57,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
                   <a href="tel:+1234567890" className="text-slate-600 hover:text-cyan-500 transition-colors">
-                    +1 (234) 567-890
+                    +91 6369239300
                   </a>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Location</h4>
                   <p className="text-slate-600">
-                    City Name, State, USA
+                    Thanjavur, Tamil Nadu, India
                   </p>
                 </div>
               </div>

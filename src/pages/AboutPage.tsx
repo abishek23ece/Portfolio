@@ -1,4 +1,4 @@
-import { GraduationCap, Code2, Lightbulb } from 'lucide-react';
+import { GraduationCap, Code2, Lightbulb, Briefcase } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -12,7 +12,7 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-              I'm a third-year Electronics and Communication Engineering (ECE) student at University Name, passionate about
+              I'm a third-year Electronics and Communication Engineering (ECE) student at K Ramakrishnan College of Technology – Trichy, passionate about
               technology and problem-solving. My journey in tech started with a
               curiosity about how things work, and has evolved into a deep commitment to
               creating meaningful digital experiences.
@@ -38,8 +38,9 @@ export default function AboutPage() {
                 <div>
                   <h3 className="font-semibold text-xl mb-2 text-slate-900">Education</h3>
                   <p className="text-slate-600">B.E. Electronics and Communication Engineering (ECE)</p>
-                  <p className="text-slate-500 text-sm">Expected Graduation: May 2026</p>
-                  <p className="text-slate-500 text-sm">GPA: 3.8/4.0</p>
+                  <p className="text-slate-500 text-sm">K Ramakrishnan College of Technology – Trichy</p>
+                  <p className="text-slate-500 text-sm">Year of Graduation: May 2027</p>
+                  <p className="text-slate-500 text-sm">GPA: 7.45</p>
                 </div>
               </div>
             </div>
@@ -47,12 +48,25 @@ export default function AboutPage() {
             <div className="bg-slate-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
               <div className="flex items-start gap-4">
                 <div className="bg-blue-500 p-3 rounded-lg">
-                  <Code2 className="text-white" size={24} />
+                  <Briefcase className="text-white" size={24} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-xl mb-2 text-slate-900">Experience</h3>
-                  <p className="text-slate-600">Software Development Intern</p>
-                  <p className="text-slate-500 text-sm">Tech Company • Summer 2024</p>
+                  <h3 className="font-semibold text-xl mb-2 text-slate-900">Internship Experience</h3>
+                  <p className="text-slate-600">Intern - Protection & Substation Automation</p>
+                  <p className="text-slate-500 text-sm">Schneider Electric India Infrastructure Limited • July - August 2025</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-start gap-4">
+                <div className="bg-blue-500 p-3 rounded-lg">
+                  <Briefcase className="text-white" size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-xl mb-2 text-slate-900">Internship Experience</h3>
+                  <p className="text-slate-600">Intern - Electrical & Instrumentation</p>
+                  <p className="text-slate-500 text-sm">UltraTech Cement Limited • December 2024</p>
                 </div>
               </div>
             </div>
@@ -64,7 +78,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-xl mb-2 text-slate-900">Interests</h3>
-                  <p className="text-slate-600">Web Development, AI/ML, Cloud Computing</p>
+                  <p className="text-slate-600">Web Development, PCB Design, Embedded Systems</p>
                 </div>
               </div>
             </div>
