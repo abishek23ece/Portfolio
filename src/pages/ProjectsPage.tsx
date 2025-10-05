@@ -3,11 +3,11 @@ import { ExternalLink, Github } from 'lucide-react';
 export default function ProjectsPage() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce application with user authentication, product management, and payment integration.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com',
+      title: 'Snake Game using Java',
+      description: 'A classic Snake game built in Java using Swing and AWT, featuring movement, food collection, and collision detection.',
+      tech: ['Java', 'Swing', 'AWT'],
+      image: 'https://i.pinimg.com/1200x/38/fb/de/38fbdeaa36e0a6faec5e5c682d06fe78.jpg',
+      github: 'https://github.com/abishek23ece/Snakegame-in-Java-.git',
       demo: 'https://example.com'
     },
     {
