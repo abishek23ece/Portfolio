@@ -7,7 +7,8 @@ export default function ProjectsPage() {
       description: 'A classic Snake game built in Java using Swing and AWT, featuring movement, food collection, and collision detection.',
       tech: ['Java', 'Swing', 'AWT'],
       image: 'https://i.pinimg.com/1200x/38/fb/de/38fbdeaa36e0a6faec5e5c682d06fe78.jpg',
-      github: 'https://github.com/abishek23ece/Snakegame-in-Java-.git'
+      github: 'https://github.com/abishek23ece/Snakegame-in-Java-.git',
+      demo: 'https://example.com'
     },
     {
       title: 'Task Management App',
@@ -93,15 +94,7 @@ export default function ProjectsPage() {
                     <Github size={18} />
                     Code
                   </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-600 hover:text-cyan-500 transition-colors duration-300 text-sm font-medium"
-                  >
-                    <ExternalLink size={18} />
-                    Demo
-                  </a>
+              
                 </div>
               </div>
             </div>
