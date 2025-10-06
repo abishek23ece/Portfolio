@@ -7,8 +7,7 @@ export default function ProjectsPage() {
       description: 'A classic Snake game built in Java using Swing and AWT, featuring movement, food collection, and collision detection.',
       tech: ['Java', 'Swing', 'AWT'],
       image: 'https://i.pinimg.com/1200x/38/fb/de/38fbdeaa36e0a6faec5e5c682d06fe78.jpg',
-      github: 'https://github.com/abishek23ece/Snakegame-in-Java-.git',
-      demo: 'https://example.com'
+      github: 'https://github.com/abishek23ece/Snakegame-in-Java-.git'
     },
     {
       title: 'Task Management App',
