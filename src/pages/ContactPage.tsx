@@ -22,17 +22,17 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen py-20 px-6 bg-slate-50">
+    <div className="min-h-screen py-20 px-6 bg-slate-50 dark:bg-background-dark transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900 dark:text-cyan-300">
           Get In Touch
         </h2>
         <div className="w-20 h-1 bg-cyan-500 mx-auto mb-12"></div>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-slate-900">Let's Connect</h3>
-            <p className="text-slate-600 mb-8 leading-relaxed">
+            <h3 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-cyan-200">Let's Connect</h3>
+            <p className="text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
               I'm always open to discussing new projects, creative ideas, or opportunities
               to be part of your visions. Feel free to reach out!
             </p>
@@ -43,8 +43,8 @@ export default function ContactPage() {
                   <Mail className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-900 mb-1">Email</h4>
-                  <a href="abishekece22@gmail.com" className="text-slate-600 hover:text-cyan-500 transition-colors">
+                  <h4 className="font-semibold text-slate-900 dark:text-cyan-200 mb-1">Email</h4>
+                  <a href="abishekece22@gmail.com" className="text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors">
                     abishekece22@gmail.com
                   </a>
                 </div>
@@ -55,8 +55,8 @@ export default function ContactPage() {
                   <Phone className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
-                  <a href="tel:+1234567890" className="text-slate-600 hover:text-cyan-500 transition-colors">
+                  <h4 className="font-semibold text-slate-900 dark:text-cyan-200 mb-1">Phone</h4>
+                  <a href="tel:+1234567890" className="text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors">
                     +91 6369239300
                   </a>
                 </div>
@@ -67,8 +67,8 @@ export default function ContactPage() {
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-900 mb-1">Location</h4>
-                  <p className="text-slate-600">
+                  <h4 className="font-semibold text-slate-900 dark:text-cyan-200 mb-1">Location</h4>
+                  <p className="text-slate-600 dark:text-slate-300">
                     Thanjavur, Tamil Nadu, India
                   </p>
                 </div>
@@ -76,10 +76,10 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-xl shadow-sm">
+          <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-cyan-200 mb-2">
                   Name
                 </label>
                 <input
@@ -89,13 +89,13 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all bg-white dark:bg-gray-800 text-slate-900 dark:text-cyan-100"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-cyan-200 mb-2">
                   Email
                 </label>
                 <input
@@ -105,13 +105,13 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all bg-white dark:bg-gray-800 text-slate-900 dark:text-cyan-100"
                   placeholder="your.email@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-cyan-200 mb-2">
                   Message
                 </label>
                 <textarea
@@ -121,7 +121,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all resize-none bg-white dark:bg-gray-800 text-slate-900 dark:text-cyan-100"
                   placeholder="Your message..."
                 />
               </div>

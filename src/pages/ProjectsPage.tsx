@@ -53,16 +53,16 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <div className="min-h-screen py-20 px-6 bg-white">
+    <div className="min-h-screen py-20 px-6 bg-white dark:bg-background-dark transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900 dark:text-cyan-300">
           Featured Projects
         </h2>
         <div className="w-20 h-1 bg-cyan-500 mx-auto mb-12"></div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
-            <div key={idx} className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100">
+            <div key={idx} className="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-gray-800">
               <div className="relative overflow-hidden h-48">
                 <img
                   src={project.image}
@@ -73,12 +73,12 @@ export default function ProjectsPage() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-slate-900">{project.title}</h3>
-                <p className="text-slate-600 mb-4 text-sm leading-relaxed">{project.description}</p>
+                <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-cyan-200">{project.title}</h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-4 text-sm leading-relaxed">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, techIdx) => (
-                    <span key={techIdx} className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-medium">
+                    <span key={techIdx} className="px-3 py-1 bg-slate-100 dark:bg-gray-800 text-slate-700 dark:text-cyan-100 rounded-full text-xs font-medium">
                       {tech}
                     </span>
                   ))}
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-600 hover:text-cyan-500 transition-colors duration-300 text-sm font-medium"
+                    className="flex items-center gap-2 text-slate-600 dark:text-cyan-300 hover:text-cyan-500 transition-colors duration-300 text-sm font-medium"
                   >
                     <Github size={18} />
                     Code

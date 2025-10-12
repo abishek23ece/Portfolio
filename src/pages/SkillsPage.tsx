@@ -54,22 +54,22 @@ export default function SkillsPage() {
   ];
 
   return (
-    <div className="min-h-screen py-20 px-6 bg-slate-50">
+    <div className="min-h-screen py-20 px-6 bg-slate-50 dark:bg-background-dark transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900 dark:text-cyan-300">
           Skills & Technologies
         </h2>
         <div className="w-20 h-1 bg-cyan-500 mx-auto mb-12"></div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {skillCategories.map((category, idx) => (
-            <div key={idx} className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold mb-6 text-slate-900">{category.title}</h3>
+            <div key={idx} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+              <h3 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-cyan-200">{category.title}</h3>
               <div className="space-y-6">
                 {category.skills.map((skill, skillIdx) => (
                   <div key={skillIdx} className="border-l-4 border-cyan-500 pl-4">
-                    <h4 className="text-slate-700 font-medium text-lg mb-2">{skill.name}</h4>
-                    <p className="text-slate-600 text-sm leading-relaxed">{skill.description}</p>
+                    <h4 className="text-slate-700 dark:text-cyan-100 font-medium text-lg mb-2">{skill.name}</h4>
+                    <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">{skill.description}</p>
                   </div>
                 ))}
               </div>
