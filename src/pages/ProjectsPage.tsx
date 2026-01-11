@@ -6,17 +6,18 @@ export default function ProjectsPage() {
       title: 'Snake Game using Java',
       description: 'A classic Snake game built in Java using Swing and AWT, featuring movement, food collection, and collision detection.',
       tech: ['Java', 'Swing', 'AWT'],
-      image: 'https://i.pinimg.com/1200x/38/fb/de/38fbdeaa36e0a6faec5e5c682d06fe78.jpg',
+      image: 'https://i.pinimg.com/736x/52/7f/2d/527f2d7479d79b72fdaf73c1cfad3c05.jpg',
       github: 'https://github.com/abishek23ece/Snakegame-in-Java-.git',
       demo: 'https://example.com'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management tool with real-time updates, drag-and-drop interface, and team collaboration features.',
-      tech: ['TypeScript', 'React', 'Firebase', 'Tailwind'],
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com',
-      demo: 'https://example.com'
+      title: 'Smart Power Consumption Monitoring System',
+  description:
+    'An IoT-based system designed to monitor real-time power consumption of electrical loads. The system helps users analyze energy usage, detect wastage, and improve energy efficiency using sensor data and a user-friendly dashboard.',
+  tech: ['Arduino', 'Current Sensor', 'IoT', 'Embedded C', 'Web Dashboard'],
+  image: 'https://i.pinimg.com/736x/52/0f/e8/520fe8c1966478393ac881367bda7079.jpg',
+  github: 'https://github.com/abishek23ece/Smart-Power-Consumption-Monitoring-System',
+  demo: 'https://example.com'
     },
     {
       title: 'Weather Dashboard',
