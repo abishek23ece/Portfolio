@@ -1,106 +1,100 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 export default function ProjectsPage() {
   const projects = [
     {
       title: 'Snake Game using Java',
-      description: 'A classic Snake game built in Java using Swing and AWT, featuring movement, food collection, and collision detection.',
+      description:
+        'A classic Snake game built in Java using Swing and AWT, featuring movement, food collection, and collision detection.',
       tech: ['Java', 'Swing', 'AWT'],
       image: 'https://i.pinimg.com/736x/52/7f/2d/527f2d7479d79b72fdaf73c1cfad3c05.jpg',
-      github: 'https://github.com/abishek23ece/Snakegame-in-Java-.git',
-      demo: 'https://example.com'
+      github: 'https://github.com/abishek23ece/Snakegame-in-Java-.git'
     },
     {
       title: 'Smart Power Consumption Monitoring System',
-  description:
-    'An IoT-based system designed to monitor real-time power consumption of electrical loads. The system helps users analyze energy usage, detect wastage, and improve energy efficiency using sensor data and a user-friendly dashboard.',
-  tech: ['Arduino', 'Current Sensor', 'IoT', 'Embedded C', 'Web Dashboard'],
-  image: 'https://i.pinimg.com/736x/52/0f/e8/520fe8c1966478393ac881367bda7079.jpg',
-  github: 'https://github.com/abishek23ece/Smart-Power-Consumption-Monitoring-System',
-  demo: 'https://example.com'
+      description:
+        'An IoT-based system to monitor real-time power consumption, analyze energy usage, detect wastage, and improve efficiency.',
+      tech: ['Arduino', 'Current Sensor', 'IoT', 'Embedded C', 'Dashboard'],
+      image: 'https://i.pinimg.com/736x/52/0f/e8/520fe8c1966478393ac881367bda7079.jpg',
+      github: 'https://github.com/abishek23ece/Smart-Power-Consumption-Monitoring-System'
     },
     {
       title: 'Weather Dashboard',
-      description: 'Interactive weather application with location-based forecasts, historical data visualization, and severe weather alerts.',
-      tech: ['React', 'Chart.js', 'OpenWeather API'],
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com',
-      demo: 'https://example.com'
-    },
-    {
-      title: 'Social Media Analytics',
-      description: 'Dashboard for tracking social media metrics with data visualization, sentiment analysis, and export capabilities.',
-      tech: ['Python', 'Django', 'PostgreSQL', 'D3.js'],
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com',
-      demo: 'https://example.com'
-    },
-    {
-      title: 'AI Study Assistant',
-      description: 'Machine learning-powered study tool that generates practice questions and provides personalized learning recommendations.',
-      tech: ['Python', 'TensorFlow', 'Flask', 'React'],
-      image: 'https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com',
-      demo: 'https://example.com'
-    },
-    {
-      title: 'Portfolio Generator',
-      description: 'Web application that helps developers create and customize their portfolio websites with live preview and deployment.',
-      tech: ['Next.js', 'Tailwind', 'Vercel', 'CMS'],
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com',
-      demo: 'https://example.com'
+      description:
+        'Interactive weather application with live forecasts, historical data visualization, and alerts.',
+      tech: ['React', 'Chart.js', 'API'],
+      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg',
+      github: 'https://github.com'
     }
   ];
 
   return (
-    <div className="min-h-screen py-20 px-6 bg-white dark:bg-background-dark transition-colors duration-300">
+    <div className="min-h-screen py-20 px-6 bg-gradient-to-br from-slate-950 via-gray-900 to-black">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900 dark:text-cyan-300">
+
+        {/* Heading */}
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-cyan-400">
           Featured Projects
         </h2>
-        <div className="w-20 h-1 bg-cyan-500 mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-violet-500 mx-auto mb-12 rounded-full"></div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, idx) => (
-            <div key={idx} className="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-gray-800">
-              <div className="relative overflow-hidden h-48">
+            <div
+              key={idx}
+              className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-xl
+              hover:scale-[1.02] transition-all duration-300"
+            >
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
               </div>
 
+              {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-cyan-200">{project.title}</h3>
-                <p className="text-slate-600 dark:text-slate-300 mb-4 text-sm leading-relaxed">{project.description}</p>
+                <h3 className="text-xl font-bold mb-3 text-cyan-300">
+                  {project.title}
+                </h3>
 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+                  {project.description}
+                </p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, techIdx) => (
-                    <span key={techIdx} className="px-3 py-1 bg-slate-100 dark:bg-gray-800 text-slate-700 dark:text-cyan-100 rounded-full text-xs font-medium">
+                    <span
+                      key={techIdx}
+                      className="px-3 py-1 text-xs font-medium rounded-full
+                      bg-gradient-to-r from-cyan-500/20 to-violet-500/20
+                      text-cyan-200 border border-white/10"
+                    >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-600 dark:text-cyan-300 hover:text-cyan-500 transition-colors duration-300 text-sm font-medium"
-                  >
-                    <Github size={18} />
-                    Code
-                  </a>
-              
-                </div>
+                {/* GitHub Link */}
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium"
+                >
+                  <Github size={18} />
+                  View Code
+                </a>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );

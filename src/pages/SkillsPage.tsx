@@ -3,79 +3,106 @@ export default function SkillsPage() {
     {
       title: 'Programming Languages',
       skills: [
-        { 
-          name: 'Java', 
-          description: 'Proficient in object-oriented programming for developing robust applications, including data structures and algorithms implementation.' 
+        {
+          name: 'Java',
+          description:
+            'Strong understanding of object-oriented programming concepts with experience in building applications and implementing data structures.'
         },
-        { 
-          name: 'C', 
-          description: 'Strong foundation in low-level programming for system-level tasks, memory management, and hardware interfacing.' 
+        {
+          name: 'C',
+          description:
+            'Solid foundation in low-level programming, memory management, and basic hardware interfacing.'
         },
-        { 
-          name: 'Python', 
-          description: 'Experienced in scripting for automation, data analysis, and prototyping embedded applications with libraries like NumPy and PySerial.' 
+        {
+          name: 'Python',
+          description:
+            'Used for scripting, automation, data handling, and basic embedded system prototyping.'
         },
-        { 
-          name: 'Basic MATLAB', 
-          description: 'Used for signal processing simulations, control systems modeling, and numerical computations in academic projects.' 
-        },
+        {
+          name: 'MATLAB (Basic)',
+          description:
+            'Applied for signal processing simulations, control system analysis, and numerical computations in academics.'
+        }
       ]
     },
     {
-      title: 'Hardware Description & Design',
+      title: 'VLSI & PCB Fundamentals',
       skills: [
-        { 
-          name: 'Verilog Code', 
-          description: 'Skilled in writing and simulating digital circuits using Verilog for FPGA-based designs and state machine implementations.' 
+        {
+          name: 'Basics of VLSI Design',
+          description:
+            'Understanding of CMOS logic, combinational and sequential circuits, digital design flow, and introductory HDL concepts.'
         },
-        { 
-          name: 'PCB Design', 
-          description: 'Hands-on experience with tools like Eagle or KiCad for schematic capture, layout, and fabrication of custom circuit boards.' 
-        },
+        {
+          name: 'Basics of PCB Design',
+          description:
+            'Knowledge of schematic design, component placement, routing fundamentals, and PCB layer concepts.'
+        }
       ]
     },
     {
       title: 'Embedded Systems & Microcontrollers',
       skills: [
-        { 
-          name: 'Basics of Embedded Systems', 
-          description: 'Understanding of real-time operating systems (RTOS), interrupt handling, and interfacing peripherals for IoT and automation projects.' 
+        {
+          name: 'Embedded Systems Fundamentals',
+          description:
+            'Basic knowledge of embedded architectures, interrupts, timers, and peripheral interfacing.'
         },
-        { 
-          name: 'Arduino Uno', 
-          description: 'Developed prototypes for sensor integration, motor control, and data logging using the Arduino IDE and shields.' 
+        {
+          name: 'Arduino Uno',
+          description:
+            'Hands-on experience developing prototypes involving sensors, actuators, and serial communication.'
         },
-        { 
-          name: 'ESP32', 
-          description: 'Implemented Wi-Fi and Bluetooth-enabled projects for wireless communication, including MQTT protocols for IoT applications.' 
-        },
+        {
+          name: 'ESP32',
+          description:
+            'Worked on Wi-Fi and Bluetooth based projects for IoT applications and wireless communication.'
+        }
       ]
     }
   ];
 
   return (
-    <div className="min-h-screen py-20 px-6 bg-slate-50 dark:bg-background-dark transition-colors duration-300">
+    <div className="min-h-screen py-20 px-6 bg-gradient-to-br from-slate-950 via-gray-900 to-black">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900 dark:text-cyan-300">
+
+        {/* Heading */}
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-cyan-400">
           Skills & Technologies
         </h2>
-        <div className="w-20 h-1 bg-cyan-500 mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-violet-500 mx-auto mb-14"></div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Skills Grid */}
+        <div className="grid md:grid-cols-3 gap-10">
           {skillCategories.map((category, idx) => (
-            <div key={idx} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-cyan-200">{category.title}</h3>
+            <div
+              key={idx}
+              className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-2xl shadow-xl
+              hover:scale-[1.02] transition-all duration-300"
+            >
+              <h3 className="text-2xl font-semibold mb-8 text-cyan-300">
+                {category.title}
+              </h3>
+
               <div className="space-y-6">
                 {category.skills.map((skill, skillIdx) => (
-                  <div key={skillIdx} className="border-l-4 border-cyan-500 pl-4">
-                    <h4 className="text-slate-700 dark:text-cyan-100 font-medium text-lg mb-2">{skill.name}</h4>
-                    <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">{skill.description}</p>
+                  <div
+                    key={skillIdx}
+                    className="border-l-4 border-cyan-400 pl-4"
+                  >
+                    <h4 className="text-cyan-200 font-medium text-lg mb-2">
+                      {skill.name}
+                    </h4>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      {skill.description}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );

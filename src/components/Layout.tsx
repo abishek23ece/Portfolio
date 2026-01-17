@@ -7,13 +7,23 @@ export default function Layout() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, [location.pathname]);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col bg-black">
+      {/* Header */}
       <Navigation />
-      <Outlet />
+
+      {/* Main Content */}
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+
+      {/* Footer */}
       <Footer />
     </div>
   );
